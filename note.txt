@@ -1,0 +1,4 @@
+git branch
+git branch -r
+git branch -a
+git branch -D + name branch
