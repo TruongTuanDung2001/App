@@ -15,12 +15,13 @@ ul, li{
 .main{
     width: 100%;
     height: 100%;
-    background-color: pink;
+    /* background-color: rgb(38, 198, 161); */
 }
 
 /* header */
 .header{
     width: 100%;
+    background-color: pink;
 }
 
 .header .top_header{
@@ -158,3 +159,32 @@ ul, li{
     transition: .6s;
 }
 
+
+/* welcome */
+.welcome{
+    width: 80%;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.welcome .welcome-content{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.welcome .welcome-content h1{
+    font-size: 55px;
+}
+
+.welcome .welcome-content img{
+    border-radius: 50%;
+    padding: 20px 0;
+    height: 200px;
+    width: 200px;
+}
+
+.welcome .welcome-content h3 {
+    font-size: 25px;
+    color: rgb(66, 51, 51);
+}
