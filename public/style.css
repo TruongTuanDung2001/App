@@ -15,7 +15,8 @@ ul, li{
 .main{
     width: 100%;
     height: 100%;
-    /* background-color: rgb(38, 198, 161); */
+    background-color: rgb(38, 198, 161);
+    padding-bottom: 200px;
 }
 
 /* header */
@@ -164,7 +165,7 @@ ul, li{
 .welcome{
     width: 80%;
     /* border: 1px solid black; */
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: bisque;
 }
 
@@ -187,4 +188,83 @@ ul, li{
 .welcome .welcome-content h3 {
     font-size: 25px;
     color: rgb(66, 51, 51);
+}
+
+/* product */
+.product{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.product .product_title{
+    font-size: 50px;
+    color: brown;
+}
+
+.product .sale_products{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px 10px;
+    overflow-x: auto;
+    height: 400px;
+}
+
+.product .sale_products .product_item{
+    height: 100%;
+    width: calc((100% - 40px) / 5);
+    /* margin: 0px 10px; */
+    border: 1px solid tan;
+    border-radius: 12px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.product .sale_products .product_item a{
+    display: block;
+}
+
+.product .sale_products .product_item img{
+    height: 150px;
+    width: 100px;
+    border-radius: 12px;
+}
+
+
+.product .sale_products .product_item h1,
+.product .sale_products .product_item img,
+.product .sale_products .product_item p{
+    margin: 8px 0;
+}
+
+.product .sale_products .product_item .func_product{
+    
+}
+
+.product .sale_products .product_item .func_product input{
+    width: 40px;
+    height: 30px;
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.product .sale_products .product_item .func_product button{
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.product .sale_products .product_item .func_product a{
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 12px;
 }

@@ -2,3 +2,19 @@ git branch
 git branch -r
 git branch -a
 git branch -D + name branch
+
+//
+git pull origin dev
+git pull origin main
+
+
+*** css ***
+overflow-x: auto; -- là nó có các item bên trong, display flex, nếu khích thước nhiều quá, muốn có thanh kéo qua kéo lại nằm ngang thì dùng.
+
+flex-shink: 0; đây là các item ở trên, tại vì kích thước nó không tự dang ra mà chỉ dang ra đủ kích thước theo item cha thì dùng, nó sẽ tự bung đúng kích thước.
+
+width: fit-content -- thẻ a tự có chiều ngang bằng với element cha, thì dùng 🔝
+
+thay vì dùng display: block cho thẻ a thì dùng display: inline-block cho thẻ a, để chiều ngang không full bằng element cha
+//
+
