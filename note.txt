@@ -8,6 +8,10 @@ git pull origin dev
 git pull origin main
 
 
+//
+git diff --để xem code thay đổi gì
+git restore . -- quay về code lúc trước, qua về commit code lần trước
+
 *** css ***
 overflow-x: auto; -- là nó có các item bên trong, display flex, nếu khích thước nhiều quá, muốn có thanh kéo qua kéo lại nằm ngang thì dùng.
 

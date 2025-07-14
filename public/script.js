@@ -103,7 +103,7 @@ function showProductItemSale(arrProducts, productElement){
                 </a>
                 <div class="func_product">
                     <input type="number" placeholder="0">
-                    <button>Add to cart</button>
+                    <button class="btnAddToCart">Add to cart</button>
                     <a href="#">Buy</a>
                 </div>
             </div>
@@ -111,5 +111,24 @@ function showProductItemSale(arrProducts, productElement){
     });
 }
 
-
 showProductItemSale(arrProductsSale, product_sale);
+
+//add to cart
+const cartQuantity = document.querySelector('.cart_quantity');
+const btnAddToCart = document.querySelectorAll('.btnAddToCart');
+
+function addToCart(cartQuantity, btnCart){
+    console.log(cartQuantity);
+    
+    btnCart.forEach(e => {
+        e.addEventListener('click', function(){
+            let quantity = Number(cartQuantity.textContent);
+            quantity++;
+            cartQuantity.textContent = quantity;
+            console.log(cartQuantity);
+            
+        });
+    });
+}
+
+addToCart(cartQuantity, btnAddToCart);
