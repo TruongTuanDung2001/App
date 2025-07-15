@@ -20,5 +20,7 @@ flex-shink: 0; đây là các item ở trên, tại vì kích thước nó khôn
 width: fit-content -- thẻ a tự có chiều ngang bằng với element cha, thì dùng 🔝
 
 thay vì dùng display: block cho thẻ a thì dùng display: inline-block cho thẻ a, để chiều ngang không full bằng element cha
-//
+
+
+
 

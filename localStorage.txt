@@ -1,0 +1,21 @@
+//localStorage
+Đơn giản: localStorage.setItem('username', 'dung');
+const name = localStorage.getItem('username');
+log(name); // dung
+đây là truyền vô 1 biến string bình thường
+
+Nâng cao: lưu giá trị là 1 object
+const inf = {
+    name: 'truong tuan dung',
+    age: 24,
+    desc: 'lee min hô'
+}
+
+Để lưu 1 object thì phải dùng JSON.stringify() để chuyển lại thành string.
+Còn khi lấy lại chuyển từ String sang object thì dùng JSON.parse()
+
+vd: localStorage.setItem(JSON.stringify('inf', inf));
+const inf = JSON.parse(localStorage.getItem('inf'));
+log(inf);
+
+//add to cart

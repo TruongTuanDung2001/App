@@ -132,3 +132,16 @@ function addToCart(cartQuantity, btnCart){
 }
 
 addToCart(cartQuantity, btnAddToCart);
+
+
+// localStorage
+const inf = {
+    name: 'truong tuan dung',
+    age: 22,
+    desc: 'dep trai'
+}
+
+localStorage.setItem('inf', JSON.stringify(inf));
+
+const ten = JSON.parse(localStorage.getItem('inf'));
+console.log(ten);
